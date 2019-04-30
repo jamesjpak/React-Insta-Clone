@@ -1,15 +1,17 @@
 import React from 'react';
-import CommentSection from '../CommentSection/CommentSection'
 import Post from './Post'
+import './PostContainer.css'
 
 
 function PostContainer(props) {
       return (
-        <div>
+        <>
+          <div className="post-container">
             <Post data={props.data} />
+          </div>
 
-            <CommentSection data={props.data} />
-        </div>
+
+        </>
       );
     }
 

@@ -3,7 +3,7 @@ import React from 'react';
 function Comment(props) {
     return (
         <div>
-            <h1>hello</h1>
+            {props.data.username} 
         </div>
     )
 }

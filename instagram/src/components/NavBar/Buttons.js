@@ -3,12 +3,19 @@ import './Buttons.css'
 
 function Buttons(props) {
   return (
-    <div>
+    <div className='button-layout'>
+
+    <div className='button-style'>
       <i className="far fa-compass"></i> 
+    </div>
 
+    <div className='button-style'>
       <i className="far fa-heart"></i> 
+    </div>
 
+    <div className='button-style'>
       <i className="far fa-user"></i>
+    </div>
 
     </div>
   );

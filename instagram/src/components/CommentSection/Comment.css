@@ -1,0 +1,12 @@
+.comment-username {
+    font-weight: bold;
+}
+
+.comment-text {
+    margin-left: 5px;
+}
+
+.comment-style {
+    display: flex;
+    flex-direction: row;
+}

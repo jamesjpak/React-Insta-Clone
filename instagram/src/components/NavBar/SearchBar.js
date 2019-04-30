@@ -6,7 +6,7 @@ function SearchBar(props) {
         <div>
             <input
                 placeholder ="Search" 
-                value={props.todo}
+                
             />
 
         </div>

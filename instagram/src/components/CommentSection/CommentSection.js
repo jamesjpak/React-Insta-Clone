@@ -3,6 +3,9 @@ import Comment from "./Comment";
 import "./CommentSection.css";
 import AddComment from "../AddComment/AddComment";
 
+
+{
+  /*
 function CommentSection(props) {
   return (
     <>
@@ -16,23 +19,24 @@ function CommentSection(props) {
     </>
   );
 }
+*/
+}
 
-{
-  /*
 class CommentSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      comments: props.comments,
-      comment: ""
+      comments: props.data.comments
     };
   }
 
   render() {
     return (
     <>
+
+
       <div className="comment-section-style">
-        <Comment comments={this.state.comments} />
+      {this.state.comments.map(element => <Comment comment={element} />)}
       </div>
 
       <div>
@@ -41,8 +45,6 @@ class CommentSection extends React.Component {
     </>
     )
     }
-}
-*/
 }
 
 export default CommentSection;

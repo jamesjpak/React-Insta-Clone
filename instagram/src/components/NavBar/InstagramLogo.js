@@ -9,7 +9,7 @@ function InstagramLogo(props) {
 
         <i className="fab fa-instagram" />
      
-        <img className='word-logo' src= {InstaLogo} />
+        <img className='word-logo' src= {InstaLogo} alt='top-logo' />
       
     </div>
   );

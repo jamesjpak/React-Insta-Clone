@@ -4,7 +4,7 @@ import './PostHeader.css';
 function PostHeader(props) {
   return (
     <div className="post-header-style">
-      <img className='post-header-profile' src={props.data.thumbnailUrl} />
+      <img className='post-header-profile' src={props.data.thumbnailUrl} alt='thumbnail' />
 
       {props.data.username}
     </div>

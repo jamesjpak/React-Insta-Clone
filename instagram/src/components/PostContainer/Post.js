@@ -14,7 +14,7 @@ function Post(props) {
       </div>
 
       <div className='post-image-container'>
-        <img src={props.data.imageUrl} /> 
+        <img src={props.data.imageUrl} alt='post-images' /> 
       </div>
 
         <div>

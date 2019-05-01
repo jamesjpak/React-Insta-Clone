@@ -18,6 +18,8 @@ class App extends React.Component {
   }
 
   handleChanges = e => {
+    e.preventDefault();
+
     this.setState({
       searchText: e.target.value
     });

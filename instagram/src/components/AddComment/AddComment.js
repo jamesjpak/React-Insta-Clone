@@ -1,16 +1,20 @@
 import React from "react";
 import './AddComment.css';
 
+
 function AddComment(props) {
   return (
-    <div className='add-comment-style'>
+    <form onSubmit={props.addComment} className='add-comment-style'>
       <input 
+      type='text'
+      
       className='input-style' 
+
       placeholder="Add a comment..." 
-      value={props.data}
-      onChange={props.handleChanges}
+      value={props.input}
+      onChange={props.commentHandler}
       />
-    </div>
+    </form>
   );
 }
 

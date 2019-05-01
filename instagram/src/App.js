@@ -8,9 +8,20 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: dummyData
+      data: [],
+      searchText: ''
     };
   }
+
+  componentDidMount() {
+    this.setState( {data: dummyData})
+  }
+
+  handleChanges = e => {
+    this.setState({
+      searchText: e.target.value
+    });
+  };
 
   render() {
     return (

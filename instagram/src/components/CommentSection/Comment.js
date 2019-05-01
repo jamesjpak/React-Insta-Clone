@@ -8,9 +8,9 @@ function Comment(props) {
         return (
           <div className='comment-style'>
 
-            <div className ='comment-username'>{comment.username}</div>
+            <div className ='comment-username'>{props.username}</div>
 
-            <div className='comment-text'>{comment.text}</div>
+            <div className='comment-text'>{props.text}</div>
 
           </div>
         );

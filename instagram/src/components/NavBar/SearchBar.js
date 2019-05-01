@@ -6,7 +6,8 @@ function SearchBar(props) {
         <div>
             <input
                 placeholder ="Search" 
-                
+                value={props.data}
+                onChange={props.handleChanges}
             />
 
         </div>

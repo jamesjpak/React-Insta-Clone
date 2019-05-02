@@ -10,7 +10,7 @@ function NavBar(props) {
     <div className='nav-bar-style'>
         <InstagramLogo data={props.data} />
 
-      <SearchBar data={props.data} searchPosts={props.searchPosts} />
+      <SearchBar data={props.data} handleChanges={props.handleChanges} searchPosts={props.searchPosts} />
 
     <Buttons data={props.data} />
     </div>

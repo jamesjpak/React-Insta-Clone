@@ -1,17 +1,17 @@
-import React from 'react';
-import './SearchBar.css';
+import React from "react";
+import "./SearchBar.css";
 
-function SearchBar(props) {
-    return (
-        <div>
-            <input
-                placeholder ="Search" 
-                value={props.data}
-                onChange={props.handleChanges}
-            />
-
-        </div>
-    )
-}
+const SearchBar = props => {
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Search"
+        onChange={props.handleChanges}
+        onKeyDown={props.searchPosts}
+      />
+    </div>
+  );
+};
 
 export default SearchBar;

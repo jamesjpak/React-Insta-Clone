@@ -29,7 +29,7 @@ class App extends React.Component {
     return (
       <div className ='temp-class'>
       <div>
-        <NavBar />
+        <NavBar data={this.data} />
       </div>
 
       <div className="App">

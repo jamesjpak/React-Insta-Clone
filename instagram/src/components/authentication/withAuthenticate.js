@@ -24,13 +24,7 @@ const withAuthenticate = PostsPage => LoginPage =>
     render() {
       return (
         <div>
-          { if (this.state.loggedIn === true) {
-            return <PostsPage /> 
-          } else {
-              return <LoginPage />
-          }
-          }
-
+          {this.state.loggedIn === true ? <PostsPage/> : <LoginPage/>}
         </div>
       );
     }

@@ -1,6 +1,6 @@
 import React from "react";
 
-class Login extends React.component {
+class LoginPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,6 +14,12 @@ class Login extends React.component {
       [event.target.name]: event.target.value
     });
   };
+
+  loginHandler = event => {
+    event.preventDefault();
+
+    localStorage.setItem("username", this.state.username)
+  }
 
   render() {
     return (
@@ -34,3 +40,5 @@ class Login extends React.component {
     );
   }
 }
+
+export default LoginPage;

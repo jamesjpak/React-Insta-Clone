@@ -18,24 +18,29 @@ class LoginPage extends React.Component {
   loginHandler = event => {
     event.preventDefault();
 
-    localStorage.setItem("username", this.state.username)
+    localStorage.setItem("username", JSON.stringify(this.state.username))
+    // localStorage.setItem("loggedIn", "true")
+    window.location.reload();
   }
 
   render() {
     return (
       <>
         <input 
-        placeHolder="username" 
+        placeholder="username" 
         name="username"
-
+        value={this.state.username}
+        onChange={this.inputHandler}
         />
 
         <input 
-        placeHolder="password" 
+        placeholder="password" 
         name="password"
+        value={this.state.password}
+        onChange={this.inputHandler}
         />
 
-        <button>Login</button>
+        <button onClick={this.loginHandler}> Login </button>
       </>
     );
   }

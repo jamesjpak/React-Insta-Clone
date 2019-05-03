@@ -7,11 +7,7 @@ import LoginPage from './components/Login/LoginPage';
 const ComponentFromWithAuthenticate = withAuthenticate(PostPage)(LoginPage)
 
 class App extends React.Component {
-  constructor() {
-    super();
   
-  }
-
   render() {
     return (
       <div>

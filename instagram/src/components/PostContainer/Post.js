@@ -3,7 +3,7 @@ import CommentSection from '../CommentSection/CommentSection';
 import PostHeader from './PostHeader';
 import LikeSection from '../LikeSection/LikeSection';
 import './Post.css';
-
+import PropTypes from 'prop-types';
 
 function Post(props) {
   return (
@@ -29,5 +29,14 @@ function Post(props) {
     </>
   );
 }
+
+Post.propTypes = {
+    data: PropTypes.shape({
+    username: PropTypes.string,
+    thumbnailUrl: PropTypes.string,
+    imageUrl: PropTypes.string
+  })
+};
+
 
 export default Post;

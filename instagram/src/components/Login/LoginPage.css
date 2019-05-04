@@ -1,0 +1,27 @@
+.inputs-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 40px;
+    border: 2px solid #0074D9;
+    border-radius: 5px;
+
+    background-color: transparent;
+    align-items: center;
+}
+
+.input-style {
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #0074D9;
+    border-radius: 5px;
+}
+
+.login-button {
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #DDDDDD;
+    color: #0074D9;
+}

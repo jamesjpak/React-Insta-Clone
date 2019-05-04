@@ -5,7 +5,7 @@ import InstagramLogo from "./InstagramLogo";
 import Buttons from "./Buttons";
 import styled from "styled-components";
 
-const NavBarWrapper = styled.div`
+const Header = styled.header`
   background-color: #ffff;
   display: flex;
   position: fixed;
@@ -18,10 +18,20 @@ const NavBarWrapper = styled.div`
   border-bottom: 1px solid grey;
 `;
 
+const LogoHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  padding-left: 20px;
+`;
+
 function NavBar(props) {
   return (
-    <NavBarWrapper>
+    <Header>
+      <LogoHeader>
       <InstagramLogo data={props.data} />
+      </LogoHeader>
 
       <SearchBar
         data={props.data}
@@ -30,7 +40,7 @@ function NavBar(props) {
       />
 
       <Buttons data={props.data} />
-    </NavBarWrapper>
+    </Header>
   );
 }
 

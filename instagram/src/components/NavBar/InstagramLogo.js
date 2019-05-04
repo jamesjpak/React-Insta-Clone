@@ -1,17 +1,22 @@
 import React from "react";
-import './InstagramLogo.css';
-import InstaLogo from '../../img/instagram.png';
+import "./InstagramLogo.css";
+import InstaLogo from "../../img/instagram.png";
+import styled from "styled-components";
+
+const CamIconWrapper = styled.div`
+  padding-right: 10px;
+`;
 
 
 function InstagramLogo(props) {
   return (
-    <div className='logo-style'>
+    <>
+      <CamIconWrapper>
+      <i className="fab fa-instagram" />
+      </CamIconWrapper>
 
-        <i className="fab fa-instagram" />
-     
-        <img className='word-logo' src= {InstaLogo} alt='top-logo' />
-      
-    </div>
+      <img className="word-logo" src={InstaLogo} alt="top-logo" />
+    </>
   );
 }
 

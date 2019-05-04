@@ -1,11 +1,12 @@
 import React from "react";
+import "./LoginPage.css";
 
 class LoginPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: ''
+      username: "",
+      password: ""
     };
   }
 
@@ -18,30 +19,32 @@ class LoginPage extends React.Component {
   loginHandler = event => {
     event.preventDefault();
 
-    localStorage.setItem("username", JSON.stringify(this.state.username))
+    localStorage.setItem("username", JSON.stringify(this.state.username));
     // localStorage.setItem("loggedIn", "true")
     window.location.reload();
-  }
+  };
 
   render() {
     return (
-      <>
-        <input 
-        placeholder="username" 
-        name="username"
-        value={this.state.username}
-        onChange={this.inputHandler}
+      <div className="inputs-container">
+        <input
+          className="input-style"
+          placeholder="username"
+          name="username"
+          value={this.state.username}
+          onChange={this.inputHandler}
         />
 
-        <input 
-        placeholder="password" 
-        name="password"
-        value={this.state.password}
-        onChange={this.inputHandler}
+        <input
+          className="input-style"
+          placeholder="password"
+          name="password"
+          value={this.state.password}
+          onChange={this.inputHandler}
         />
 
-        <button onClick={this.loginHandler}> Login </button>
-      </>
+        <button className="login-button" onClick={this.loginHandler}> Login </button>
+      </div>
     );
   }
 }

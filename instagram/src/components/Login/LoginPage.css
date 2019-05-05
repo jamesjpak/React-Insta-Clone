@@ -1,0 +1,54 @@
+.background {
+    width: 100%;
+    background-image: url(../img/art-artistic-artsy-2103127.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    padding: 150px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.inputs-container {
+    width: 300px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 40px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+
+    background-color: rgba(128, 128, 128, 0.568);
+    align-items: center;
+}
+
+.input-style {
+    width: 90%;
+    margin: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+input {
+    text-align: center;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.856);
+  }
+
+.login-button {
+    margin-top: 20px;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}

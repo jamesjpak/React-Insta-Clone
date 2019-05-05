@@ -1,0 +1,11 @@
+.button-layout {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.button-style {
+    margin-left: 10px; 
+    margin-right: 10px;
+    font-size: 20px;
+}

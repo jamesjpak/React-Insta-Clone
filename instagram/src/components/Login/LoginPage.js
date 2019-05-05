@@ -26,24 +26,29 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <div className="inputs-container">
-        <input
-          className="input-style"
-          placeholder="username"
-          name="username"
-          value={this.state.username}
-          onChange={this.inputHandler}
-        />
+      <div className="background">
+        <div className="inputs-container">
+          <input
+            className="input-style"
+            placeholder="username"
+            name="username"
+            value={this.state.username}
+            onChange={this.inputHandler}
+          />
 
-        <input
-          className="input-style"
-          placeholder="password"
-          name="password"
-          value={this.state.password}
-          onChange={this.inputHandler}
-        />
+          <input
+            className="input-style"
+            placeholder="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.inputHandler}
+          />
 
-        <button className="login-button" onClick={this.loginHandler}> Login </button>
+          <button className="login-button" onClick={this.loginHandler}>
+            {" "}
+            Login{" "}
+          </button>
+        </div>
       </div>
     );
   }
